@@ -1,0 +1,1 @@
+This folder contains redirections commands practice in linux terminal.

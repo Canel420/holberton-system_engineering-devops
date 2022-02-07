@@ -1,0 +1,1 @@
+The contained scripts make different changes in file's permissions.

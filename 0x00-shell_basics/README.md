@@ -1,0 +1,1 @@
+this code print current directory path
