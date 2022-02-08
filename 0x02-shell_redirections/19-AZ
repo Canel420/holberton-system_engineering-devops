@@ -1,2 +1,2 @@
 #!/bin/bash
-tr AZ ce
+echo 'AAAAcccc' | tr 'Ac' 'Ze'
