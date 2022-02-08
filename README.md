@@ -1,1 +1,1 @@
-This code prints the absolute path for your working director
+This repository contains solved challenges to practice terminal commands.
