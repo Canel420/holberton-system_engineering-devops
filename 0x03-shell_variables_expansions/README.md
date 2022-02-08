@@ -1,0 +1,1 @@
+This repository contains use examples of init files, variables and expansion commands use in the SHELL.
