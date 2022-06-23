@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Script that prints Best School except for the 4th & 8th iteration.
+
+var='Best School'
+i=1
+while [ $i -le 10 ];
+do
+    if [[ $i == 4 ]];
+    then
+        echo "bad luck"
+    elif [[ $i == 8 ]];
+    then
+        echo "good luck"
+    else
+        echo "$var"
+    fi
+    ((i++))
+done
