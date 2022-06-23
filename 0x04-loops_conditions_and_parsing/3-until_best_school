@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script that prints Best School 10 times using until loop.
+
+var='Best School'
+i=0
+until [ $i == 10 ];
+do
+	echo "$var"
+	i=$((i+1))
+done
