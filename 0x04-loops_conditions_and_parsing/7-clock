@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Script that prints the numbers in an hour.
+
+i=0
+while [ $i -le 12 ];
+do
+    if [[ $i == 0 ]];
+    then
+        echo "Hour: $i"
+    else
+        j=1
+        while [ $j -le 59 ];
+        do
+            case $j in
+
+                59)
+                    echo "$j"
+                    echo "Hour: $i"
+                    ;;
+                *)
+                    echo "$j"
+                    ;;
+            esac
+           ((j++))
+        done
+    fi
+    ((i++))
+done
