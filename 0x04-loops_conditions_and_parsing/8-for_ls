@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script that list the content in current directory.
+
+for file in *;
+do
+   echo "$file" | cut -d '-' -f 2
+done
