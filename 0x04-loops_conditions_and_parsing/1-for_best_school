@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script that prints Best school 10 times using for looping.
+
+var='Best School'
+
+for((i=0; i<10;i++))
+do
+	echo "$var"
+done
