@@ -2,14 +2,14 @@
 # Script that prints the numbers in an hour.
 
 i=0
-while [ $i -le 12 ];
+while [ "$i" -le 12 ];
 do
-    if [[ $i == 0 ]];
+    if [[ "$i" -eq 0 ]];
     then
         echo "Hour: $i"
     else
         j=1
-        while [ $j -le 59 ];
+        while [ "$j" -le 59 ];
         do
             case $j in
 
