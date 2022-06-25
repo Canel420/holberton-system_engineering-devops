@@ -1,4 +1,6 @@
-# include <stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
  * infinite_while - Infinite loop
@@ -29,7 +31,7 @@ int main(void)
 		if (pid < 0)
 			continue;
 		else if (pid == 0)
-			exit();
+			exit(1);
 		else
 			printf("Zombie process created, PID: %d\n", pid);
 	}
