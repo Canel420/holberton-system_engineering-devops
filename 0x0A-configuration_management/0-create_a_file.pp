@@ -1,3 +1,5 @@
+# Creates a file using puppet manifest
+
 $file = '/tmp/school'
 
 file { $file:
