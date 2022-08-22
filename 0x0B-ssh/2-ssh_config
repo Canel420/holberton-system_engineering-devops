@@ -1,0 +1,6 @@
+#Answer file of my local ~/.ssh/config file.
+Host 4521-web-01
+     HostName 54.82.52.66
+     User ubuntu
+     IdentityFile ~/.ssh/school
+     PasswordAuthentication no
