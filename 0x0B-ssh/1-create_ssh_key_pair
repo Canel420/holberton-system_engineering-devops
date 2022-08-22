@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Creates new RSA key par saved in school specific file.
+ssh-keygen -b 4096 -f school -N betty
