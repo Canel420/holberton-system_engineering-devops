@@ -4,7 +4,7 @@ sudo apt -y update
 sudo apt -y upgrade
 sudo apt -y install nginx
 sudo service nginx start
-new_string="\\\trewrite ^/redirect_me$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
-sudo sed -i "19i $new_string" /etc/nginx/sites-available/default
+sudo chmod 777 /etc/nginx/sites-available/
+sudo chmod 777 /etc/nginx/sites-available/default
+sed -i "/listen 80 default_server;/ a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
 sudo service nginx restart
-sudo service nginx reload
