@@ -4,6 +4,8 @@
 
 sudo apt -y update
 sudo apt -y install haproxy
+sudo chmod 777 /etc/haproxy
+sudo chmod 777 /etc/haproxy/haproxy.cfg
 sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy_orig.cfg
 echo "frontend http
         bind *:80
