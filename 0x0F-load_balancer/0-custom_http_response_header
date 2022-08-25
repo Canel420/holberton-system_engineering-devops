@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Adds http headers to nginx.config
 sudo apt -y update
 sudo apt -y install nginx
 sudo service nginx start
