@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Adds a custom Nginx response header.
-
 sudo apt -y update
 sudo apt -y install nginx
 sudo service nginx start
