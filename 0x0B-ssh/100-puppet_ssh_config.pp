@@ -1,4 +1,6 @@
 # Configuration file server set up in puppet.
+include stdlib
+
 file_line { 'disable password login':
   path => '/etc/ssh/ssh_config',
   line => 'PasswordAuthentication no',
