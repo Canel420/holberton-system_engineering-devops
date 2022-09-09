@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Script that uses a REST API for searching a given employee ID,
-and export data into a CSV format.
+and export data into a json format.
 """
 
 from json import dump
