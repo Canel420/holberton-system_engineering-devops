@@ -10,19 +10,20 @@ from sys import argv
 
 if __name__ == '__main__':
     user_id = argv[1]
-    url = f'https://jsonplaceholder.typicode.com/users/{user_id}'
+    url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
     response = get(url)
     name = response.json().get('name')
 
-    url_tasks = f'https://jsonplaceholder.typicode.com/users/{user_id}/todos'
-    response = get(url_tasks)
+    url = 'https://jsonplaceholder.typicode.com/users/{}/todos'.format(user_id)
+    response = get(url)
     tasks = response.json()
     done_tasks = []
     for task in tasks:
         if task.get('completed'):
             title = task.get('title')
             done_tasks.append(title)
-    print(f'Employee {name} is done with tasks' +
-          f'({len(done_tasks)}/{len(tasks)}):')
+
+    print("Employee {} is done with tasks({}/{}):"
+          .format(name, len(done_tasks), len(tasks)))
     for title in done_tasks:
-        print(f'\t {title}')
+        print("\t {}".format(title))
