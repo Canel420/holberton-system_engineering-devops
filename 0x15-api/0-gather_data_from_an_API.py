@@ -23,6 +23,6 @@ if __name__ == '__main__':
             title = task.get('title')
             done_tasks.append(title)
     print(f'Employee {name} is done with tasks' +
-          '({len(done_tasks)}/{len(tasks)}):')
+          f'({len(done_tasks)}/{len(tasks)}):')
     for title in done_tasks:
         print(f'\t {title}')
